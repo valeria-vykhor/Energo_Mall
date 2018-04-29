@@ -1,0 +1,108 @@
+.action {
+    text-align: center;
+
+    .row {
+        margin-top: 51px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 21px;  
+        }
+    }
+    
+    p {
+        font-family: Calibri-Light;
+        color: rgba(105, 106, 123, 255);
+
+        .text-red {
+            font-family: Calibri-Bold;
+        }
+
+        &:nth-of-type(3) {
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            @media screen and (min-width: 1024px) {
+                margin: 0 70px;
+            }
+        }
+    }
+
+    .display-4 {
+        text-transform: uppercase;
+        font-size: 3.75rem;
+
+        @media screen and (max-width: 767px) {
+            font-size: 2.6rem;
+            line-height: 3.18rem;
+            padding: 0 12px;
+        }
+
+        @media screen and (max-width: 390px) {
+            font-size: 2.2rem;
+        }
+
+        &:first-of-type {
+            margin-top: 53px;
+            @media screen and (max-width: 767px) {
+                margin-top: 43px;
+            }
+        }
+        &:nth-of-type(2) {
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    .header-form {
+        border: 1px solid #e8e8e8;
+        height: 384px;
+        padding: 33px 39px 30px;
+        margin-right: 0;
+
+        @media screen and (max-width: 767px) {
+            margin: 0 auto;
+            box-shadow: 0px 1px 2px 2px #e8e8e8;
+            max-width: 348px;
+        }
+
+        @media screen and (max-width: 390px) {
+            height: auto;
+            padding: 33px 25px 30px;
+        }
+
+        .title {
+            font-family: Calibri;
+            margin-bottom: 16px;
+        }
+
+        span {
+            color: #c1543b;
+            font-family: Calibri-Light;
+        }
+
+        p:nth-of-type(2) {
+            padding: 0 21px;
+            line-height: 1.373rem;
+            margin-bottom: 22px;
+
+            @media screen and (max-width: 390px) {
+                padding: 0 11px;
+            }
+        }
+
+        .btn-block {
+            margin-top: 22px;
+            padding: 12px 0 7px;
+        }
+
+        input, textarea {
+            padding: 12px 16px 8px;
+            &::placeholder {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

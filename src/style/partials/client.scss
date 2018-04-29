@@ -1,0 +1,15 @@
+.client {
+    padding-top: 77px;
+    padding-bottom: 33px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 47px;
+        padding-bottom: 0;
+    }
+
+    .display-4 {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 25px;
+        }
+    }
+}

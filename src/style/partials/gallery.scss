@@ -1,0 +1,122 @@
+.gallery {
+    background-color: #f4f4f4;
+    padding: 43px 0 22px;
+
+    .row .row .row {
+        @media screen and (max-width: 767px) {
+            margin: 0;
+        }
+
+        .col-12 {
+            @media screen and (max-width: 767px) {
+                padding: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 31px 0 13px;
+    }
+
+    p {
+        color: #696a7b;
+        text-align: center;
+        font-family: Calibri-Light !important;
+
+        &:nth-of-type(3) {
+            font-size: 1.5rem;
+            line-height: 3.25rem;
+            margin-bottom: 44px;
+
+            @media screen and (max-width: 767px) {
+                line-height: 1.9rem; 
+                padding: 10px 10px 0;
+                margin-bottom: 37px; 
+            }
+        }
+
+        &:nth-of-type(4) {
+            font-size: 2.25rem;
+            line-height: 5rem;
+
+            @media screen and (max-width: 575px) {
+                font-size: 1.5rem;
+                line-height: 1.9rem;
+                padding: 37px 5px 28px;
+            }
+        }
+    }
+
+    .display-4 {
+        text-transform: uppercase;
+        font-size: 3.75rem;
+        line-height: 3.7rem;
+
+        @media screen and (max-width: 767px) {
+            font-size: 2.63rem;
+            line-height: 3.18rem;
+        }
+
+        @media screen and (max-width: 390px) {
+            font-size: 2.3rem;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 3px 7px;
+
+        @media screen and (max-width: 575px) {
+            padding: 0 8px 7px 8px !important;
+            height: auto;
+        }
+    }
+
+    .header-form {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+
+        @media screen and (max-width: 390px) {
+            padding: 0 5px;
+        }
+
+        .btn-block {
+            font-size: 1.5rem;
+            padding: 12.5px;
+        }
+
+        textarea {
+            height: 78px;
+            margin-top: 3px;
+            padding: 5px 8px;
+        }
+
+        input {
+            height: 39px;
+            margin: 7px 0 11px;
+            padding: 6px 0 0 16px;
+        }
+
+        textarea, input {
+            background-color: #fff;
+            border: 1px solid  #e8e8e8;
+
+            &::placeholder {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .p-l-0 {
+        padding-left: 0;
+    }
+
+    .p-r-0 {
+        padding-right: 0;
+    }
+}

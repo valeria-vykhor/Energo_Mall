@@ -1,0 +1,77 @@
+@font-face {
+	font-family: Calibri;
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/calibri.ttf);
+}
+
+@font-face {
+	font-family: Calibri-Light;
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/calibri-light.ttf);
+}
+
+@font-face {
+	font-family: Calibri-Bold;
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/calibri-bold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Calibri;
+}
+
+*:focus {
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+body {
+	font-family: Calibri;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-width: 320px !important;
+}
+
+.modal {
+	min-width: 320px !important;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+b {
+	font-family: Calibri-Bold;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.text-red {
+	color: rgba(193, 84, 59, 255);
+}
+
+.font-light {
+	font-family: Calibri-Light !important;
+}
+.font-bold {
+	font-family: Calibri-Bold !important;
+}
+
+.center-block {
+	margin: 0 auto;
+}
+
+.m-0-5 {
+	margin: 0 5px;
+}
