@@ -1,29 +1,31 @@
-    <section class="application container-fluid">
-        <p class="text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="400"><img class="img-fluid" alt="" src="img/divider-white.png"></p>
-        <div class="row text-white">
-            <div class="col wow fadeInLeft" data-wow-delay="200">
-                <p class="display-4">ЕСТЬ предложение ДРУГОЙ КОМПАНИИ?</p>
-                <p class="display-4 font-bold">МЫ ПРЕДОСТАВИМ БОЛЕЕ ВЫГОДНЫЕ УСЛОВИЯ,</p>
-                <p class="display-4">А ТАК Же ПРЕДоставим:</p>
-                <ul class="list-unstyled">
-                    <li>- КОНСУЛЬТАЦИю экспертов</li>
-                    <li>- индивидуальный подход</li>
-                    <li>- оперативную обработку заявки и своевременную поставку</li>
-                    <li>- прозрачную и комфортную работу без проблем </li>
-                    <li>- комплексное закрытие потребности с одного склада</li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-auto">
-                <form class="header-form text-center wow fadeInRight" data-wow-delay="200">
-                    <p class="title">ОТПРАВЬТЕ ЗАЯВКУ</p>
-                    <p class="font-light">Чтобы <span class="font-bold">сократить ваши затраты до 20%</span> укажите интересующие позиции</p>
-                    <div class="form-group font-light">
-                        <textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-                        <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-                        <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
-                        <button class="btn btn-block text-white" type="submit">Отправить заявку</button>
-                    </div>
-                </form>
+    <section class="application">
+        <div class="container-fluid">
+            <p class="text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="400"><img class="img-fluid" alt="" src="img/divider-white.png"></p>
+            <div class="row text-white">
+                <div class="col wow fadeInLeft" data-wow-delay="200">
+                    <p class="display-4">ЕСТЬ предложение ДРУГОЙ КОМПАНИИ?</p>
+                    <p class="display-4 font-bold">МЫ ПРЕДОСТАВИМ БОЛЕЕ ВЫГОДНЫЕ УСЛОВИЯ,</p>
+                    <p class="display-4">А ТАК Же ПРЕДоставим:</p>
+                    <ul class="list-unstyled">
+                        <li>- КОНСУЛЬТАЦИю экспертов</li>
+                        <li>- индивидуальный подход</li>
+                        <li>- оперативную обработку заявки и своевременную поставку</li>
+                        <li>- прозрачную и комфортную работу без проблем </li>
+                        <li>- комплексное закрытие потребности с одного склада</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <form class="header-form text-center wow fadeInRight" data-wow-delay="200" action="send.php" method="post">
+                        <p class="title">ОТПРАВЬТЕ ЗАЯВКУ</p>
+                        <p class="font-light">Чтобы <span class="font-bold">сократить ваши затраты до 20%</span> укажите интересующие позиции</p>
+                        <div class="form-group font-light">
+                            <textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+                            <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                            <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
+                            <button class="btn btn-block text-white" type="submit">Отправить заявку</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>

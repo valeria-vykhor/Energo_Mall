@@ -1,6 +1,10 @@
 .partner {
     padding: 58px 0 0;
 
+    @media screen and (min-width: 1240px) {
+        max-width: 1140px;
+    }
+
     @media screen and (max-width: 767px) {
         padding: 40px 0 0;
     }

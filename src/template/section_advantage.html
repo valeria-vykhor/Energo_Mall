@@ -43,13 +43,13 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content container">
                 <div class="modal-body row">
-                    <form class="header-form text-center col-12">
+                    <form class="header-form text-center col-12" action="send.php" method="post">
                         <p class="display-4">Узнать про услугу</p>
                         <p class="font-light">Чтобы узнать подробнее <span class="font-bold">про бесплатную услугу «Мониторинг предложений» </span> 
                             напишите свою контактную информацию и мы <span class="font-bold">свяжемся с вами через 5 минут</span></p>
                             <div class="form-group font-light">
-                                <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-                                <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
+                                <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                                <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
                                 <button class="btn btn-block text-white" type="submit">Узнать про услугу</button>
                             </div>
                         </form>

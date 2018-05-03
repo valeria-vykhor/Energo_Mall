@@ -36,4 +36,17 @@ $(document).ready( function() {
         $("[data-order='7']").attr('src', orderEight);
         $("[data-order='1']").attr('src', orderNine);
     }
+
+    $("button:submit").click(function() {
+        $(this).closest('form').addClass("validate");
+
+        if ($('.validate input:required').val() == '') {
+            $('.validate').addClass("not-valid");
+        }
+        else {
+            $(this).closest('form').removeClass("not-valid");
+        }
+
+        $('.validate').removeClass("validate");
+    });
 });

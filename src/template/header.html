@@ -1,51 +1,53 @@
-<header class="text-white container-fluid">
-	<div class="row">
-		<div class="col">
-			<div class="d-flex flex-column">
-				<div class="sm-text-center wow fadeInDown">
-					<img class="img-fluid" src="img/logo.png" alt="">
-				</div>
-				<div class="order-md-2">
-					<p class="font-light wow flipInX sm-text-center" data-wow-delay="200ms"><mark>Поставки электрики и кабельной продукции</mark></p>
-					<p class="text-red wow flipInX sm-text-center" data-wow-delay="300ms">Для монтажных, строительных и торговых компаний</p>
-				</div>
-				<div class="order-md-1 wow flipInX">
-					<p class="header-title sm-text-center">Сокращайте затраты на закупку электрики до 20% уже сегодня</p>
-				</div>
-				<ul class="list-unstyled sm-center-block order-md-3">
-					<li class="wow fadeInUp" data-wow-delay="200ms">- огнестойкий, общепромышленный и сетевой кабель</li>
-					<li class="wow fadeInUp" data-wow-delay="300ms">- системы молниезащиты</li>
-					<li class="wow fadeInUp" data-wow-delay="400ms">- системы сигнализации и оповещания</li>
-					<li class="wow fadeInUp" data-wow-delay="500ms">- аппараты защиты и коммутации</li>
-					<li class="wow fadeInUp" data-wow-delay="600ms">- кабеленесущие системы</li>
-					<li class="wow fadeInUp" data-wow-delay="700ms">- светотехника</li>
-					<li class="wow fadeInUp" data-wow-delay="800ms">- установочные изделия и фурнитура</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-12 col-md-auto">
-			<div class="d-flex flex-column justify-content-md-between align-items-md-end">
-				<form class="header-form text-center sm-center-block order-md-2 wow fadeInUp" data-wow-delay="200">
-					<p class="title">Узнать цены</p>
-					<hr>
-					<p>У вас есть заявка?</p>
-					<p>Специалист свяжется с Вами в течении <span class="text-red">3 минут</span></p>
-					<div class="form-group font-light">
-						<textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-						<input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-						<input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
-						<button class="btn btn-block text-white" type="submit">Узнать цены</button>
+<header class="text-white">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="d-flex flex-column">
+					<div class="sm-text-center wow fadeInDown">
+						<img class="img-fluid" src="img/logo.png" alt="">
 					</div>
-				</form>
-				<div class="order-md-1 sm-center-block p-l-60 wow fadeInDown">
-					<div class="tel">
-						<p>ОТДЕЛ ПРОДАЖ</p>
-						<p>067 - 325 - 31 - 41</p>
+					<div class="order-md-2">
+						<p class="font-light wow flipInX sm-text-center" data-wow-delay="200ms"><mark>Поставки электрики и кабельной продукции</mark></p>
+						<p class="text-red wow flipInX sm-text-center" data-wow-delay="300ms">Для монтажных, строительных и торговых компаний</p>
 					</div>
-					<p class="mail"><a href="mailto:order.energomall@gmail.com">order.energomall@gmail.com</a></p>
+					<div class="order-md-1 wow flipInX">
+						<p class="header-title sm-text-center">Сокращайте затраты на закупку электрики до 20% уже сегодня</p>
+					</div>
+					<ul class="list-unstyled sm-center-block order-md-3">
+						<li class="wow fadeInUp" data-wow-delay="200ms">- огнестойкий, общепромышленный и сетевой кабель</li>
+						<li class="wow fadeInUp" data-wow-delay="300ms">- системы молниезащиты</li>
+						<li class="wow fadeInUp" data-wow-delay="400ms">- системы сигнализации и оповещания</li>
+						<li class="wow fadeInUp" data-wow-delay="500ms">- аппараты защиты и коммутации</li>
+						<li class="wow fadeInUp" data-wow-delay="600ms">- кабеленесущие системы</li>
+						<li class="wow fadeInUp" data-wow-delay="700ms">- светотехника</li>
+						<li class="wow fadeInUp" data-wow-delay="800ms">- установочные изделия и фурнитура</li>
+					</ul>
 				</div>
 			</div>
+			<div class="col-12 col-md-auto">
+				<div class="d-flex flex-column align-items-md-end">
+					<form class="header-form text-center sm-center-block order-md-2 wow fadeInUp" data-wow-delay="200" action="send.php" method="post">
+						<p class="title">Узнать цены</p>
+						<hr>
+						<p>У вас есть заявка?</p>
+						<p>Специалист свяжется с Вами в течении <span class="text-red">3 минут</span></p>
+						<div class="form-group font-light">
+							<textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+							<input class="form-control" type="text" name="name" placeholder="Ваше имя">
+							<label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
+							<button class="btn btn-block text-white" type="submit">Узнать цены</button>
+						</div>
+					</form>
+					<div class="order-md-1 sm-center-block p-l-60 wow fadeInDown">
+						<div class="tel">
+							<p>ОТДЕЛ ПРОДАЖ</p>
+							<p>067 - 325 - 31 - 41</p>
+						</div>
+						<p class="mail"><a href="mailto:order.energomall@gmail.com">order.energomall@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
 		</div>
+		<a href="#section-advantage" class="scroll-to center-block wow fadeInUp d-none d-md-block" data-wow-duration="1s" data-wow-delay="600ms"><img src="img/arrow.png"></a>
 	</div>
-	<a href="#section-advantage" class="scroll-to center-block wow fadeInUp d-none d-md-block" data-wow-duration="1s" data-wow-delay="600ms"><img src="img/arrow.png"></a>
 </header>

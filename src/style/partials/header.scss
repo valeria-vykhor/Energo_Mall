@@ -5,6 +5,12 @@ header {
 	background-size: cover;
 	padding: 21px 27px 25px 45px!important;
 
+	.header-form {
+		@media screen and (min-width: 768px) {
+			margin-top: 70px !important;
+		}
+	}
+
 	.col .order-md-2 p {
 		@media screen and (max-width: 767px) {
 			margin-top: 8px !important;
@@ -51,7 +57,6 @@ header {
 		text-transform: uppercase;
 		margin-top: 20px;
 		font-size: 1.6rem;
-		padding-left: 12px;
 		font-family: Calibri-Light !important;
 
 		@media screen and (max-width: 946px) {
@@ -74,7 +79,7 @@ header {
 		}
 	}
 
-	> a {
+	.container-fluid > a {
 		width: 40px;
 		height: 30px;
 		text-align: center;
@@ -88,10 +93,26 @@ header {
 .header-form {
 	background-color: #fff;
 	padding: 36px 40px 30px 40px;
-	margin-right: 32px;
 	color: rgba(105, 106, 123, 255);
 	max-width: 347px;
 
+	.warning {
+		position: relative;
+		margin-bottom: 0;
+		width: 100%;
+		
+		&:after {
+			content: '*';
+			position: absolute;
+			color: #bd5434;
+			width: 2px;
+			height: 2px;
+			top: 7px;
+			right: 16px;
+			font-size: 1.2rem;
+			display: block;
+		}
+	}
 
 	@media screen and (max-width: 946px) {
 		padding: 36px 28px 30px;
@@ -261,7 +282,6 @@ header {
 		}
 
 		.header-form {
-			margin-right: 0;
 			padding: 26px 37px 0 33px;
 			max-width: 342px;
 			height: 349px;
@@ -308,5 +328,15 @@ header {
 				padding: 8px 0 5px;
 			}
 		}
+	}
+}
+
+.not-valid input:required {
+	border: 1px solid red !important;
+}
+
+.container-fluid, .container {
+	@media screen and (min-width: 1240px) {
+		max-width: 1240px;
 	}
 }

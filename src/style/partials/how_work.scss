@@ -46,11 +46,11 @@
 
     > .row .col-12:nth-of-type(1) > div, .row .col-12:nth-of-type(3) > div {
         @media screen and (min-width: 1005px) {
-         max-width: 300px; 
-     }
- }
+           max-width: 300px; 
+       }
+   }
 
- > .row > .col-12:nth-of-type(2) > div, .row > .col-12:nth-of-type(4) > div {
+   > .row > .col-12:nth-of-type(2) > div, .row > .col-12:nth-of-type(4) > div {
 
 
     @media screen and (min-width: 1005px) {
@@ -133,10 +133,10 @@
 
 .col-12 img {
     @media screen and (min-width: 1005px) {
-     margin: 0 0 28px 100px; 
- }
+       margin: 0 0 28px 100px; 
+   }
 
- @media screen and (max-width: 1004px) {
+   @media screen and (max-width: 1004px) {
     margin-bottom: 33px !important;
 }
 
@@ -161,10 +161,10 @@
     img {
         
         @media screen and (min-width: 1005px) {
-         margin: 0 0 28px 35px; 
-     }
+           margin: 0 0 28px 35px; 
+       }
 
-     @media screen and (max-width: 1105px) and (min-width: 1005px) {
+       @media screen and (max-width: 1105px) and (min-width: 1005px) {
         margin: 0 0 28px 80px;
     }
     

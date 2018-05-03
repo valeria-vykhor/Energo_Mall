@@ -48,7 +48,7 @@
     </div>
     <div class="row justify-content-center no-gutters wow flipInX">
         <div class="col-12 col-md-auto">
-            <a href="#" class="btn-red sm-center-block"><span class="font-light">смотреть весь ассортимент</span></a>
+            <a href="https://drive.google.com/file/d/1fCUr8tl0BYLqF5AVFjGGNpYF30qu1wch/view?usp=sharing" target="blank" class="btn-red sm-center-block"><span class="font-light">смотреть весь ассортимент</span></a>
         </div> 
         <div class="col-12 col-md-auto">
             <button type="button" class="btn btn-red" data-toggle="modal" data-target="#price-form">
@@ -60,15 +60,15 @@
     <div class="modal fade" id="price-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content container">
-               <div class="modal-body row">
-                <form class="header-form text-center col-12">
+             <div class="modal-body row">
+                <form class="header-form text-center col-12" action="send.php" method="post">
                     <p class="display-4">Узнать цены</p>
                     <p class="font-light">Чтобы <span class="font-bold">сократить ваши затраты до 20%</span> напишите
                     свою заявку и контактную информацию для связи</p>
                     <div class="form-group font-light">
-                        <textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-                        <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-                        <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
+                        <textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+                        <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+                        <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
                         <button class="btn btn-block text-white" type="submit">Узнать цены</button>
                     </div>
                 </form>

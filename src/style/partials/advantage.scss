@@ -1,13 +1,19 @@
 .advantage {
+
+    max-width: 1240px;
     
     ul {
-        padding: 93px 10px 60px 10px;
+        padding: 93px 0 60px 0;
 
         .btn {
             background-color: transparent;
-            margin-left: 20px;
             text-decoration: underline;
             color: rgba(193, 84, 59, 255);
+            margin-left: 20px;
+
+            @media screen and (min-width: 1140px) {
+                margin-left: 30px;
+            }    
         }
     }
     
@@ -29,6 +35,10 @@
         div {
             border-left: 1px solid #f0f0f0;
             padding: 0 5px 0 20px;
+
+            @media screen and (min-width: 1140px) {
+                padding: 0 5px 0 30px;
+            } 
 
             @media screen and (min-width: 768px) {
                 min-height: 153px;
@@ -125,7 +135,7 @@
         }
 
         @media screen and (max-width: 390px) {
-            padding: 35px 22px 30px 21px;
+            padding: 35px 22px 10px 21px;
             height: auto;
         }
 

@@ -9,56 +9,58 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="text-white container-fluid">
-			<div class="row">
-				<div class="col">
-					<div class="d-flex flex-column">
-						<div class="sm-text-center wow fadeInDown">
-							<img class="img-fluid" src="img/logo.png" alt="">
-						</div>
-						<div class="order-md-2">
-							<p class="font-light wow flipInX sm-text-center" data-wow-delay="200ms"><mark>Поставки электрики и кабельной продукции</mark></p>
-							<p class="text-red wow flipInX sm-text-center" data-wow-delay="300ms">Для монтажных, строительных и торговых компаний</p>
-						</div>
-						<div class="order-md-1 wow flipInX">
-							<p class="header-title sm-text-center">Сокращайте затраты на закупку электрики до 20% уже сегодня</p>
-						</div>
-						<ul class="list-unstyled sm-center-block order-md-3">
-							<li class="wow fadeInUp" data-wow-delay="200ms">- огнестойкий, общепромышленный и сетевой кабель</li>
-							<li class="wow fadeInUp" data-wow-delay="300ms">- системы молниезащиты</li>
-							<li class="wow fadeInUp" data-wow-delay="400ms">- системы сигнализации и оповещания</li>
-							<li class="wow fadeInUp" data-wow-delay="500ms">- аппараты защиты и коммутации</li>
-							<li class="wow fadeInUp" data-wow-delay="600ms">- кабеленесущие системы</li>
-							<li class="wow fadeInUp" data-wow-delay="700ms">- светотехника</li>
-							<li class="wow fadeInUp" data-wow-delay="800ms">- установочные изделия и фурнитура</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-12 col-md-auto">
-					<div class="d-flex flex-column justify-content-md-between align-items-md-end">
-						<form class="header-form text-center sm-center-block order-md-2 wow fadeInUp" data-wow-delay="200">
-							<p class="title">Узнать цены</p>
-							<hr>
-							<p>У вас есть заявка?</p>
-							<p>Специалист свяжется с Вами в течении <span class="text-red">3 минут</span></p>
-							<div class="form-group font-light">
-								<textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-								<input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-								<input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
-								<button class="btn btn-block text-white" type="submit">Узнать цены</button>
+		<header class="text-white">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<div class="d-flex flex-column">
+							<div class="sm-text-center wow fadeInDown">
+								<img class="img-fluid" src="img/logo.png" alt="">
 							</div>
-						</form>
-						<div class="order-md-1 sm-center-block p-l-60 wow fadeInDown">
-							<div class="tel">
-								<p>ОТДЕЛ ПРОДАЖ</p>
-								<p>067 - 325 - 31 - 41</p>
+							<div class="order-md-2">
+								<p class="font-light wow flipInX sm-text-center" data-wow-delay="200ms"><mark>Поставки электрики и кабельной продукции</mark></p>
+								<p class="text-red wow flipInX sm-text-center" data-wow-delay="300ms">Для монтажных, строительных и торговых компаний</p>
 							</div>
-							<p class="mail"><a href="mailto:order.energomall@gmail.com">order.energomall@gmail.com</a></p>
+							<div class="order-md-1 wow flipInX">
+								<p class="header-title sm-text-center">Сокращайте затраты на закупку электрики до 20% уже сегодня</p>
+							</div>
+							<ul class="list-unstyled sm-center-block order-md-3">
+								<li class="wow fadeInUp" data-wow-delay="200ms">- огнестойкий, общепромышленный и сетевой кабель</li>
+								<li class="wow fadeInUp" data-wow-delay="300ms">- системы молниезащиты</li>
+								<li class="wow fadeInUp" data-wow-delay="400ms">- системы сигнализации и оповещания</li>
+								<li class="wow fadeInUp" data-wow-delay="500ms">- аппараты защиты и коммутации</li>
+								<li class="wow fadeInUp" data-wow-delay="600ms">- кабеленесущие системы</li>
+								<li class="wow fadeInUp" data-wow-delay="700ms">- светотехника</li>
+								<li class="wow fadeInUp" data-wow-delay="800ms">- установочные изделия и фурнитура</li>
+							</ul>
 						</div>
 					</div>
+					<div class="col-12 col-md-auto">
+						<div class="d-flex flex-column align-items-md-end">
+							<form class="header-form text-center sm-center-block order-md-2 wow fadeInUp" data-wow-delay="200" action="send.php" method="post">
+								<p class="title">Узнать цены</p>
+								<hr>
+								<p>У вас есть заявка?</p>
+								<p>Специалист свяжется с Вами в течении <span class="text-red">3 минут</span></p>
+								<div class="form-group font-light">
+									<textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+									<input class="form-control" type="text" name="name" placeholder="Ваше имя">
+									<label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
+									<button class="btn btn-block text-white" type="submit">Узнать цены</button>
+								</div>
+							</form>
+							<div class="order-md-1 sm-center-block p-l-60 wow fadeInDown">
+								<div class="tel">
+									<p>ОТДЕЛ ПРОДАЖ</p>
+									<p>067 - 325 - 31 - 41</p>
+								</div>
+								<p class="mail"><a href="mailto:order.energomall@gmail.com">order.energomall@gmail.com</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
+				<a href="#section-advantage" class="scroll-to center-block wow fadeInUp d-none d-md-block" data-wow-duration="1s" data-wow-delay="600ms"><img src="img/arrow.png"></a>
 			</div>
-			<a href="#section-advantage" class="scroll-to center-block wow fadeInUp d-none d-md-block" data-wow-duration="1s" data-wow-delay="600ms"><img src="img/arrow.png"></a>
 		</header>
 		<section class="advantage container-fluid" id="section-advantage">
 		    <ul class="list-unstyled row sm-text-center">
@@ -105,13 +107,13 @@
 		        <div class="modal-dialog" role="document">
 		            <div class="modal-content container">
 		                <div class="modal-body row">
-		                    <form class="header-form text-center col-12">
+		                    <form class="header-form text-center col-12" action="send.php" method="post">
 		                        <p class="display-4">Узнать про услугу</p>
 		                        <p class="font-light">Чтобы узнать подробнее <span class="font-bold">про бесплатную услугу «Мониторинг предложений» </span> 
 		                            напишите свою контактную информацию и мы <span class="font-bold">свяжемся с вами через 5 минут</span></p>
 		                            <div class="form-group font-light">
-		                                <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-		                                <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
+		                                <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+		                                <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
 		                                <button class="btn btn-block text-white" type="submit">Узнать про услугу</button>
 		                            </div>
 		                        </form>
@@ -144,14 +146,15 @@
 		        <div class="col-12 col-sm-6 col-md-7">
 		            <button class="text-white text-left d-flex btn-m" data-target="#product-form" data-toggle="modal">
 		                <div>
-		                    <p>Огнестойкий кабель - это наша локомотивная группа товаров, которая позволит существенно сократить затратную часть вашей компании.</p>
-		                    <p><b>Цена ниже чем у производителей!</b></p>
-		                    <p><b>Самый крупный склад в Украине</b></p>
+		                    <p>Компания ТОВ «Енерго Молл» входит в топ 3 поставщиков в товарной группе огнестойкий кабель.</p>
 		                </div>
 		                <div>
-		                    <p><span class="font-bold">FLAME NHXH - FE180/E30 и FE180/E90</span> (более 50км на складе)</p>
-		                    <p><span class="font-bold">JE-H(ST)H … Bd FE180/E30 и FE180/E90</span> (более 40км на складе)</p>
-		                    <p><span class="font-bold">J-Y(St)Y, J-H(ST)H … Bd</span> (более 20км на складе)</p>
+		                    <div><h4>FLAME NHXH - FE180/E30 и FE180/E90 </h4><span class="font-light"> (более 50км на складе)</span></div>
+		                    <div><span class="font-light">Огнестойкий безгалогенный кабель повышенной безопасности </span><h4> (N)HXH FE180/E30 и (N)HXH FE180/E90</h4></div>
+		                    <div><h4>JE-H(ST)H … Bd FE180/E30 и FE180/E90 </h4><span class="font-light"> (более 40км на складе)</span></div>
+		                    <div><span class="font-light">Огнестойкий безгалогенный кабель связи повышенной безопасности </span><h4> JE-H(St)H FE180</h4></div>
+		                    <div><h4>J-Y(St)Y, J-H(ST)H … Bd </h4><span class="font-light"> (более 20км на складе)</span></div> 
+		                    <p>Кабель для систем охранной и пожарной сигнализации</p>
 		                </div>
 		            </button>
 		        </div>
@@ -237,15 +240,15 @@
 		    <div class="modal fade" id="product-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 		        <div class="modal-dialog" role="document">
 		            <div class="modal-content container">
-		               <div class="modal-body row">
-		                <form class="header-form text-center col-12">
+		             <div class="modal-body row">
+		                <form class="header-form text-center col-12" action="send.php" method="post">
 		                    <p class="display-4">Узнать подробнее</p>
 		                    <p class="font-light">Чтобы уточнить наличие и стоимость напишите свою заявку или просто отправьте нам свои контакты.</p>
 		                    <p class="font-light">Мы свяжемся с Вами в течении 1 минуты</p>
 		                    <div class="form-group font-light">
-		                        <textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-		                        <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-		                        <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
+		                        <textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+		                        <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+		                        <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
 		                        <button class="btn btn-block text-white" type="submit">Узнать цены</button>
 		                    </div>
 		                </form>
@@ -315,7 +318,7 @@
 		    </div>
 		    <div class="row justify-content-center no-gutters wow flipInX">
 		        <div class="col-12 col-md-auto">
-		            <a href="#" class="btn-red sm-center-block"><span class="font-light">смотреть весь ассортимент</span></a>
+		            <a href="https://drive.google.com/file/d/1fCUr8tl0BYLqF5AVFjGGNpYF30qu1wch/view?usp=sharing" target="blank" class="btn-red sm-center-block"><span class="font-light">смотреть весь ассортимент</span></a>
 		        </div> 
 		        <div class="col-12 col-md-auto">
 		            <button type="button" class="btn btn-red" data-toggle="modal" data-target="#price-form">
@@ -327,15 +330,15 @@
 		    <div class="modal fade" id="price-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 		        <div class="modal-dialog" role="document">
 		            <div class="modal-content container">
-		               <div class="modal-body row">
-		                <form class="header-form text-center col-12">
+		             <div class="modal-body row">
+		                <form class="header-form text-center col-12" action="send.php" method="post">
 		                    <p class="display-4">Узнать цены</p>
 		                    <p class="font-light">Чтобы <span class="font-bold">сократить ваши затраты до 20%</span> напишите
 		                    свою заявку и контактную информацию для связи</p>
 		                    <div class="form-group font-light">
-		                        <textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-		                        <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-		                        <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
+		                        <textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+		                        <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+		                        <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
 		                        <button class="btn btn-block text-white" type="submit">Узнать цены</button>
 		                    </div>
 		                </form>
@@ -355,64 +358,66 @@
 		    </div>
 		</div>
 		</section>
-		<section class="gallery container-fluid">
-		    <p class="display-4 wow flipInX" data-wow-delay="300ms">Фото крупнейших</p>
-		    <p class="display-4 wow flipInX" data-wow-delay="300ms">реализованных объектов</p>
-		    <p class="wow flipInX" data-wow-delay="400ms">Примеры объектов, построенных при нашей поддержке</p>
-		    <div class="row no-gutters">
-		        <div class="col-12 col-md-5">
-		            <div class="row no-gutters">
-		                <div class="col-12 col-sm-6">
-		                    <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                        <div class="col-12"><img class="p-l-0" height="168px" src="img/gall-1.png" alt="" data-order="8"></div>
+		<section class="gallery">
+		    <div class="container-fluid">
+		        <p class="display-4 wow flipInX" data-wow-delay="300ms">Фото крупнейших</p>
+		        <p class="display-4 wow flipInX" data-wow-delay="300ms">реализованных объектов</p>
+		        <p class="wow flipInX" data-wow-delay="400ms">Примеры объектов, построенных при нашей поддержке</p>
+		        <div class="row no-gutters">
+		            <div class="col-12 col-md-5">
+		                <div class="row no-gutters">
+		                    <div class="col-12 col-sm-6">
+		                        <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                            <div class="col-12"><img class="p-l-0" height="168px" src="img/gall-1.png" alt="" data-order="8"></div>
+		                        </div>
+		                        <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                            <div class="col-12"><img class="p-l-0" height="489px" src="img/gall-2.png" alt="" data-order="5"></div>
+		                        </div>
 		                    </div>
-		                    <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                        <div class="col-12"><img class="p-l-0" height="489px" src="img/gall-2.png" alt="" data-order="5"></div>
+		                    <div class="col-12 col-sm-6">
+		                        <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                            <div class="col-12"><img height="411px" src="img/gall-3.png" alt="" data-order="2"></div>
+		                        </div>
+		                        <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                            <div class="col-12"><img height="246px" src="img/gall-4.png" alt=""></div>
+		                        </div>
 		                    </div>
 		                </div>
-		                <div class="col-12 col-sm-6">
-		                    <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                        <div class="col-12"><img height="411px" src="img/gall-3.png" alt="" data-order="2"></div>
+		            </div>
+		            <div class="col-12 col-md-7">
+		                <div class="row no-gutters">
+		                    <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                        <div><img height="162px" src="img/gall-5.png" alt="" data-order="9"></div>
 		                    </div>
-		                    <div class="row wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                        <div class="col-12"><img height="246px" src="img/gall-4.png" alt=""></div>
+		                    <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                        <div><img class="p-r-0" height="162px" src="img/gall-6.png" alt=""></div>
+		                    </div>
+		                </div>
+		                <div class="row no-gutters">
+		                    <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                        <div><img height="158px" src="img/gall-7.png" alt="" data-order="3"></div>
+		                    </div>
+		                    <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                        <div><img class="p-r-0" height="158px" src="img/gall-8.png" alt="" data-order="7"></div>
+		                    </div>
+		                </div>
+		                <div class="row no-gutters">
+		                    <div class="col-12 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		                        <img class="p-r-0" height="337px" src="img/gall-9.png" alt="" data-order="1">
 		                    </div>
 		                </div>
 		            </div>
 		        </div>
-		        <div class="col-12 col-md-7">
-		            <div class="row no-gutters">
-		                <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                    <div><img height="162px" src="img/gall-5.png" alt="" data-order="9"></div>
-		                </div>
-		                <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                    <div><img class="p-r-0" height="162px" src="img/gall-6.png" alt=""></div>
-		                </div>
+		        <p class="wow flipInX" data-wow-delay="200ms" data-wow-duration="1.5s">Посчитать стоимость электрики моего объекта</p>
+		        <div class="row justify-content-center no-gutters wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
+		            <form class="header-form text-center col-auto" action="send.php" method="post">
+		             <div class="form-group font-light">
+		                <textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+		                <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
+		                <button class="btn btn-block text-white" type="submit">Узнать цены</button>
 		            </div>
-		            <div class="row no-gutters">
-		                <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                    <div><img height="158px" src="img/gall-7.png" alt="" data-order="3"></div>
-		                </div>
-		                <div class="col-12 col-sm-6 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                    <div><img class="p-r-0" height="158px" src="img/gall-8.png" alt="" data-order="7"></div>
-		                </div>
-		            </div>
-		            <div class="row no-gutters">
-		                <div class="col-12 wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		                    <img class="p-r-0" height="337px" src="img/gall-9.png" alt="" data-order="1">
-		                </div>
-		            </div>
-		        </div>
+		        </form>
 		    </div>
-		    <p class="wow flipInX" data-wow-delay="200ms" data-wow-duration="1.5s">Посчитать стоимость электрики моего объекта</p>
-		    <div class="row justify-content-center no-gutters wow zoomIn" data-wow-delay="200ms" data-wow-duration="1.5s">
-		        <form class="header-form text-center col-auto">
-		           <div class="form-group font-light">
-		            <textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-		            <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
-		            <button class="btn btn-block text-white" type="submit">Узнать цены</button>
-		        </div>
-		    </form>
 		</div>
 		</section>
 		<section class="how_work container">
@@ -469,20 +474,20 @@
 		    </section>
 		<section class="action container">
 		    <p class="display-4 wow flipInX" data-wow-delay="300ms">МЫ ДАРИМ до <span class="text-red">5% доп. скидки</span></p>
-		    <p class="display-4 wow flipInX" data-wow-delay="300ms">при заказе огнестойкого кабеля</p>
-		    <p class="wow flipInX" data-wow-delay="400ms">При заказе огнестойкого кабеля до 30.05.2018 с промокодом «Енерго-Молл» 
-		    предоставляется дополнительная скидка до 5 %</p>
+		    <p class="display-4 wow flipInX" data-wow-delay="300ms">на огнестойкий кабель!!!</p>
+		    <p class="wow flipInX" data-wow-delay="400ms">При заказе <b>до 15.05.2018</b> с промокодом «Енерго-Молл»</p> 
+		    <p class="wow flipInX" data-wow-delay="400ms">предоставляется дополнительная скидка на огнестойкий кабель до 5 %</p>
 		    <div class="row no-gutters justify-content-center wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1.5s">
 		        <div class="col-md-auto d-none d-md-block">
 		            <img src="img/action.png" alt="">
 		        </div>
 		        <div class="col-12 col-md-auto">
-		            <form class="header-form text-center col-auto">
+		            <form class="header-form text-center col-auto" action="send.php" method="post">
 		                <div class="form-group font-light">
 		                    <p class="title">подробнее об акции</p>
 		                    <p>Хотите узнать о дополнительной скидке? Cпециалист свяжется с Вами в течении <span>3 минут</span></p>
-		                    <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-		                    <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
+		                    <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+		                    <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
 		                    <button class="btn btn-block text-white" type="submit">Связаться со мной</button>
 		                </div>
 		            </form>
@@ -537,32 +542,34 @@
 		        </div>
 		    </div>
 		</section>
-		    <section class="application container-fluid">
-		        <p class="text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="400"><img class="img-fluid" alt="" src="img/divider-white.png"></p>
-		        <div class="row text-white">
-		            <div class="col wow fadeInLeft" data-wow-delay="200">
-		                <p class="display-4">ЕСТЬ предложение ДРУГОЙ КОМПАНИИ?</p>
-		                <p class="display-4 font-bold">МЫ ПРЕДОСТАВИМ БОЛЕЕ ВЫГОДНЫЕ УСЛОВИЯ,</p>
-		                <p class="display-4">А ТАК Же ПРЕДоставим:</p>
-		                <ul class="list-unstyled">
-		                    <li>- КОНСУЛЬТАЦИю экспертов</li>
-		                    <li>- индивидуальный подход</li>
-		                    <li>- оперативную обработку заявки и своевременную поставку</li>
-		                    <li>- прозрачную и комфортную работу без проблем </li>
-		                    <li>- комплексное закрытие потребности с одного склада</li>
-		                </ul>
-		            </div>
-		            <div class="col-12 col-md-auto">
-		                <form class="header-form text-center wow fadeInRight" data-wow-delay="200">
-		                    <p class="title">ОТПРАВЬТЕ ЗАЯВКУ</p>
-		                    <p class="font-light">Чтобы <span class="font-bold">сократить ваши затраты до 20%</span> укажите интересующие позиции</p>
-		                    <div class="form-group font-light">
-		                        <textarea class="form-control" name="user-msg" placeholder="Напишите свою заявку здесь..."></textarea>
-		                        <input class="form-control" type="text" name="user-name" placeholder="Ваше имя">
-		                        <input class="form-control" type="tel" name="user-tel" placeholder="Ваш телефон">
-		                        <button class="btn btn-block text-white" type="submit">Отправить заявку</button>
-		                    </div>
-		                </form>
+		    <section class="application">
+		        <div class="container-fluid">
+		            <p class="text-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="400"><img class="img-fluid" alt="" src="img/divider-white.png"></p>
+		            <div class="row text-white">
+		                <div class="col wow fadeInLeft" data-wow-delay="200">
+		                    <p class="display-4">ЕСТЬ предложение ДРУГОЙ КОМПАНИИ?</p>
+		                    <p class="display-4 font-bold">МЫ ПРЕДОСТАВИМ БОЛЕЕ ВЫГОДНЫЕ УСЛОВИЯ,</p>
+		                    <p class="display-4">А ТАК Же ПРЕДоставим:</p>
+		                    <ul class="list-unstyled">
+		                        <li>- КОНСУЛЬТАЦИю экспертов</li>
+		                        <li>- индивидуальный подход</li>
+		                        <li>- оперативную обработку заявки и своевременную поставку</li>
+		                        <li>- прозрачную и комфортную работу без проблем </li>
+		                        <li>- комплексное закрытие потребности с одного склада</li>
+		                    </ul>
+		                </div>
+		                <div class="col-12 col-md-auto">
+		                    <form class="header-form text-center wow fadeInRight" data-wow-delay="200" action="send.php" method="post">
+		                        <p class="title">ОТПРАВЬТЕ ЗАЯВКУ</p>
+		                        <p class="font-light">Чтобы <span class="font-bold">сократить ваши затраты до 20%</span> укажите интересующие позиции</p>
+		                        <div class="form-group font-light">
+		                            <textarea class="form-control" name="mess" placeholder="Напишите свою заявку здесь..."></textarea>
+		                            <input class="form-control" type="text" name="name" placeholder="Ваше имя">
+		                            <label class="warning"><input class="form-control" type="tel" name="tel" placeholder="Ваш телефон" required></label>
+		                            <button class="btn btn-block text-white" type="submit">Отправить заявку</button>
+		                        </div>
+		                    </form>
+		                </div>
 		            </div>
 		        </div>
 		    </section>
@@ -581,7 +588,9 @@
 		                <p class="link"><a href="http://energomall.com.ua/" target="blank">energomall.com.ua</a></p>
 		            </div>
 		        </div>
-		        <div class="text-center  wow fadeInUp" data-wow-delay="200ms"><img class="img-fluid" src="img/logo-2.png" alt=""></div>
+		        <div class="text-center  wow fadeInUp" data-wow-delay="200ms">
+		            <img class="img-fluid" src="img/logo-2.png" alt="">
+		        </div>
 		    </section>
 		</footer>
 	</div>

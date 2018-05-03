@@ -1,100 +1,100 @@
     .application {
-    background: url('../img/bg-btm.png') center top no-repeat;
-    background-size: cover;
-    padding: 31px 15px 42px;
+        background: url('../img/bg-btm.png') center top no-repeat;
+        background-size: cover;
+        padding: 31px 15px 42px;
 
-    @media screen and (min-width: 768px) {
-        padding: 50px 78px 36px;
-    }
+        @media screen and (min-width: 768px) {
+            padding: 50px 78px 36px;
+        }
 
-    .row {
-        padding-top: 63px;
+        .row {
+            padding-top: 63px;
+            
+            @media screen and (max-width: 767px) {
+                padding-top: 35px;
+            }
+        }
+
+        .col-12 {
+            @media screen and (max-width: 834px) {
+                flex: 1 1 100%;
+            }
+        }
         
-        @media screen and (max-width: 767px) {
-            padding-top: 35px;
-        }
-    }
-
-    .col-12 {
-        @media screen and (max-width: 834px) {
-            flex: 1 1 100%;
-        }
-    }
-    
-    .display-4, li {
-        text-transform: uppercase;
-        font-family: Calibri-Light;
-    }
-
-    ul {
-        padding-top: 24px;
-
-        @media screen and (max-width: 767px) {
-            padding-top: 12px;
+        .display-4, li {
+            text-transform: uppercase;
+            font-family: Calibri-Light;
         }
 
-        li {
-            font-size: 1.13rem;
-            line-height: 1.88rem;
+        ul {
+            padding-top: 24px;
 
             @media screen and (max-width: 767px) {
-                font-size: 1rem;
+                padding-top: 12px;
             }
-        }
-    }
 
-    .display-4 {
-        font-size: 3rem;
+            li {
+                font-size: 1.13rem;
+                line-height: 1.88rem;
 
-        @media screen and (max-width: 994px) {
-            font-size: 1.88rem;
-        }
-
-        @media screen and (max-width: 390px) {
-            font-size: 1.7rem;
-        }
-    }
-
-    .header-form {
-        max-width: 372px;
-        height: 501px;
-        padding: 34px 25px 10px;
-        margin-right: 0;
-
-        @media screen and (max-width: 834px) {
-            margin: 0 auto;
-        }
-
-        @media screen and (max-width: 399px) {
-            height: auto;
-            padding: 34px 20px 10px;
-        }
-
-        .title {
-            margin-bottom: 18px;
-        }
-
-        p:nth-of-type(2) {
-            font-size: 1.12rem;
-            line-height: 1.35rem;
-            padding: 0 12px 4px;
-        }
-        
-        input, textarea {
-            border: 1px solid #e8e8e8;
-            padding: 9px 9px;
-
-            &::placeholder {
-                font-size: 1.1rem;
+                @media screen and (max-width: 767px) {
+                    font-size: 1rem;
+                }
             }
         }
 
-        textarea {
-            height: 173px;
+        .display-4 {
+            font-size: 3rem;
+
+            @media screen and (max-width: 994px) {
+                font-size: 1.88rem;
+            }
+
+            @media screen and (max-width: 390px) {
+                font-size: 1.7rem;
+            }
         }
 
-        .btn-block {
-            margin-top: 30px;
+        .header-form {
+            max-width: 372px;
+            height: 501px;
+            padding: 34px 25px 10px;
+            margin-right: 0;
+
+            @media screen and (max-width: 834px) {
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: 429px) {
+                height: auto;
+                padding: 34px 20px 10px;
+            }
+
+            .title {
+                margin-bottom: 18px;
+            }
+
+            p:nth-of-type(2) {
+                font-size: 1.12rem;
+                line-height: 1.35rem;
+                padding: 0 12px 4px;
+            }
+            
+            input, textarea {
+                border: 1px solid #e8e8e8;
+                padding: 9px 9px;
+
+                &::placeholder {
+                    font-size: 1.1rem;
+                }
+            }
+
+            textarea {
+                height: 173px;
+            }
+
+            .btn-block {
+                margin-top: 30px;
+            }
         }
     }
-}

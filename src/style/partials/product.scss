@@ -1,21 +1,39 @@
 .product {
-    padding: 55px 40px;
+    padding: 55px 0;
     color: rgba(105, 106, 123, 255);
+    max-width: 1240px;
 
     > .row:first-of-type {
         margin: 40px 20px 5px 20px;
-        height: 303px;
+        height: 320px;
 
-        button img {
-            height: 303px;
-            width: 100%;
-            overflow: hidden;
-            object-fit: cover;
+        button {
+            img {
+                height: 320px;
+                width: 100%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            h4 {
+                font-family: Calibri-Bold;
+                font-size: 1rem;
+                line-height: 1.35rem;
+                display: inline;
+                
+                @media screen and (max-width: 575px) {
+                    font-size: 0.87rem;
+                }
+            }
         }
     }
 
     > .row {
         margin: 5px 20px;
+
+        @media screen and (min-width: 1240px) {
+            padding: 0 50px;
+        }
 
         &:nth-of-type(n+2) {
             img {
@@ -36,7 +54,7 @@
             }
 
             .col-12:nth-last-of-type(even) {
-               @media screen and (min-width: 575px) and (max-width: 766px) {
+             @media screen and (min-width: 575px) and (max-width: 766px) {
                 margin: 0 0 0 1%;
             }               
         }
@@ -68,10 +86,6 @@ button {
         font-family: Calibri-Light !important; 
         font-size: 1rem;
         line-height: 1.35rem;           
-    }
-
-    div:nth-child(2) p {
-        margin-top: 20px;
     }
 }
 
@@ -299,22 +313,37 @@ button {
         padding: 37px 20px 33px;
 
         > .row:first-of-type {
-            @media screen and (min-width: 576px) and (max-width: 767px) {
-                height: 270px !important;
+            @media screen and (min-width: 731px) and (max-width: 767px) {
+                height: 370px !important;
             }
 
-            @media screen and (max-width: 575px) {
+            @media screen and (min-width: 600px) and (max-width: 730px) {
+                height: 430px !important;
+            }
+
+            @media screen and (max-width: 599px) {
                 height: auto;
             }
             margin: 20px 5px 5px;
 
             img {
-                @media screen and (min-width: 575px) and (max-width: 767px) {
-                    height: 270px !important;
+                @media screen and (min-width: 731px) and (max-width: 767px) {
+                    height: 370px !important;
                 }
 
-                @media screen and (max-width: 574px) {
+                @media screen and (min-width: 600px) and (max-width: 730px) {
+                    height: 430px !important;
+                }
+
+                @media screen and (max-width: 599px) {
                     height:  auto !important;
+                }
+            }
+
+            .col-12 {
+                @media screen and (max-width: 599px) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
                 }
             }
         }
@@ -333,10 +362,6 @@ button {
             div:nth-child(2) {
                 p {
                     margin-top: 0;
-                }
-
-                p:first-of-type {
-                    margin-top: 15px;
                 }
             }
         }
