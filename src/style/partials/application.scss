@@ -3,6 +3,12 @@
         background-size: cover;
         padding: 31px 15px 42px;
 
+        .container-fluid, .container {
+            @media screen and (min-width: 1240px) {
+                max-width: 1230px;
+            }
+        }
+
         @media screen and (min-width: 768px) {
             padding: 50px 78px 36px;
         }
@@ -22,8 +28,8 @@
         }
         
         .display-4, li {
-            text-transform: uppercase;
-            font-family: Calibri-Light;
+            @extend .uppercase;
+            @extend .font-light;
         }
 
         ul {

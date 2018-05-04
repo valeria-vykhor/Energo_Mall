@@ -11,11 +11,11 @@
     }
     
     p {
-        font-family: Calibri-Light;
+        @extend .font-light;
         color: rgba(105, 106, 123, 255);
 
         .text-red {
-            font-family: Calibri-Bold;
+            @extend .font-bold;
         }
 
         &:nth-of-type(3), &:nth-of-type(4) {
@@ -28,7 +28,7 @@
     }
 
     .display-4 {
-        text-transform: uppercase;
+        @extend .uppercase;
         font-size: 3.75rem;
 
         @media screen and (max-width: 767px) {
@@ -47,6 +47,7 @@
                 margin-top: 43px;
             }
         }
+        
         &:nth-of-type(2) {
             margin-bottom: 20px;
 
@@ -74,13 +75,13 @@
         }
 
         .title {
-            font-family: Calibri;
+            @extend .font-family;
             margin-bottom: 16px;
         }
 
         span {
             color: #c1543b;
-            font-family: Calibri-Light;
+            @extend .font-light;
         }
 
         p:nth-of-type(2) {

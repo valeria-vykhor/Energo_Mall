@@ -25,7 +25,7 @@
     p {
         color: #696a7b;
         text-align: center;
-        font-family: Calibri-Light !important;
+        font-family: $font-light !important;
 
         &:nth-of-type(3) {
             font-size: 1.5rem;
@@ -52,7 +52,7 @@
     }
 
     .display-4 {
-        text-transform: uppercase;
+        @extend .uppercase;
         font-size: 3.75rem;
         line-height: 3.7rem;
 

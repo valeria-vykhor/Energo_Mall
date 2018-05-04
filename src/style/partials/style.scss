@@ -19,6 +19,11 @@
 	src: url(../fonts/calibri-bold.ttf);
 }
 
+$font: Calibri;
+$font-light: Calibri-Light;
+$font-bold: Calibri-Bold;
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -26,7 +31,7 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: Calibri;
+	font-family: $font;
 }
 
 *:focus {
@@ -35,7 +40,7 @@
 }
 
 body {
-	font-family: Calibri;
+	font-family: $font;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	min-width: 320px !important;
@@ -50,7 +55,7 @@ p {
 }
 
 b {
-	font-family: Calibri-Bold;
+	font-family: $font-bold;
 }
 
 a:hover {
@@ -62,10 +67,19 @@ a:hover {
 }
 
 .font-light {
-	font-family: Calibri-Light !important;
+	font-family: Calibri-Light;
 }
+
 .font-bold {
 	font-family: Calibri-Bold !important;
+}
+
+.font-family {
+	font-family: $font;
+}
+
+.uppercase {
+	text-transform: uppercase;
 }
 
 .center-block {

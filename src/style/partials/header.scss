@@ -21,7 +21,6 @@ header {
 		height: 100%;
 	}
 
-
 	.tel {
 		position: relative;
 
@@ -39,12 +38,13 @@ header {
 			font-size: 75% !important;
 		}
 	}
+
 	mark {
+		@extend .uppercase;
 		background-color: #fff !important;
 		color: rgba(27, 24, 24, 255);
 		font-size: 1.85rem;
-		text-transform: uppercase;
-		font-family: Calibri-Light !important;
+		font-family: $font-light !important;
 		padding: 10px 25px 10px 13px;
 
 		@media screen and (max-width: 946px) {
@@ -54,10 +54,10 @@ header {
 	}
 
 	.text-red {
-		text-transform: uppercase;
+		@extend .uppercase;
 		margin-top: 20px;
 		font-size: 1.6rem;
-		font-family: Calibri-Light !important;
+		font-family: $font-light !important;
 
 		@media screen and (max-width: 946px) {
 			font-size: 1.3rem;
@@ -68,7 +68,7 @@ header {
 	ul {
 		margin: 12px 0 74px 0;
 		li {
-			font-family: Calibri-Light !important;
+			font-family: $font-light !important;
 			font-size: 1.25rem;
 			line-height: 1.84rem;
 
@@ -132,7 +132,7 @@ header {
 
 	.title {
 		font-size: 1.5rem;
-		text-transform: uppercase;
+		@extend .uppercase;
 	}
 
 	.btn, input, textarea {
@@ -178,8 +178,8 @@ header {
 }
 
 .header-title {
-	font-family: Calibri-Bold;
-	text-transform: uppercase;
+	@extend .font-bold;
+	@extend .uppercase;
 	font-size: 3.45rem;
 	line-height: 3.7rem;
 	letter-spacing: -3px;
@@ -251,7 +251,7 @@ header {
 				color: #fff;
 				font-size: 0.77rem;
 				line-height: 1rem;
-				font-family: Calibri !important;
+				font-family: $font !important;
 				margin-top: 10px;
 			}
 		}
@@ -268,7 +268,7 @@ header {
 			font-size: 0.76rem;
 			line-height: 1rem;
 			padding: 6px 4px 5px;
-			font-family: Calibri !important;
+			font-family: $font !important;
 		}
 
 		ul {
@@ -286,7 +286,6 @@ header {
 			max-width: 342px;
 			height: 349px;
 			margin-bottom: 21px;
-			
 
 			p, .text-red {
 				font-size: 0.85rem;

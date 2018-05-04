@@ -48,222 +48,220 @@
         @media screen and (min-width: 1005px) {
            max-width: 300px; 
        }
-   }
-
-   > .row > .col-12:nth-of-type(2) > div, .row > .col-12:nth-of-type(4) > div {
-
-
-    @media screen and (min-width: 1005px) {
-        max-width: 255px;
-        margin-top: 25px;
-        margin-right: -20px;
     }
 
-    @media screen and (max-width: 1105px) {
-        margin-right: 0;
-    }
-}
+    > .row > .col-12:nth-of-type(2) > div, .row > .col-12:nth-of-type(4) > div {
 
-> .row > .col-12:nth-of-type(4) > div {
-    @media screen and (min-width: 1005px) {
-        max-width: 205px;
-    }
-}
-
-.row .col-12:nth-of-type(2) .step-caption {
-    position: relative;
-
-    &:before {
         @media screen and (min-width: 1005px) {
-            content: '';
-            position: absolute;
-            background: url('../img/step-1.png');
-            width: 152px;
-            height: 109px;
-            bottom: 20px;
-            right: 276px;
+            max-width: 255px;
+            margin-top: 25px;
+            margin-right: -20px;
         }
-    }
-}
 
-.row .col-12:nth-of-type(3) .step-caption {
-    position: relative;
-
-    &:before {
-        @media screen and (min-width: 1005px) {
-            content: '';
-            position: absolute;
-            background: url('../img/step-2.png');
-            width: 95px;
-            height: 109px;
-            right: 315px;
-            top: 7px;
+        @media screen and (max-width: 1105px) {
+            margin-right: 0;
         }
     }
 
-    &:after {
+    > .row > .col-12:nth-of-type(4) > div {
         @media screen and (min-width: 1005px) {
-            content: '';
-            position: absolute;
-            background: url('../img/step-3.png');
-            width: 95px;
-            height: 109px;
-            right: -96px;
-            top: 7px;
+            max-width: 205px;
         }
     }
-}
 
-.display-4 {
-    color: rgba(105, 106, 123, 255);
-    text-transform: uppercase;
-    font-family: Calibri-Light !important;
-    font-size: 3.75rem;
-    margin-bottom: 49px;
+    .row .col-12:nth-of-type(2) .step-caption {
+        position: relative;
 
-    @media screen and (max-width: 767px) {
-        font-size: 2.62rem;
-        margin-bottom: 38px;
-    }
-
-    @media screen and (max-width: 390px) {
-        font-size: 2.3rem;
-    }
-}
-
-.col-12 img {
-    @media screen and (min-width: 1005px) {
-       margin: 0 0 28px 100px; 
-   }
-
-   @media screen and (max-width: 1004px) {
-    margin-bottom: 33px !important;
-}
-
-@media screen and (max-width: 1105px) and (min-width: 1005px) {
-    margin: 0 0 28px 118px;
-}
-}
-
-.row {
-
-    .col-12:nth-of-type(3) {
-
-        img {
+        &:before {
             @media screen and (min-width: 1005px) {
-              margin: 0 0 28px 79px;  
-          }
-      }
-  }
-
-  .col-12:nth-of-type(4) {
-
-    img {
-        
-        @media screen and (min-width: 1005px) {
-           margin: 0 0 28px 35px; 
-       }
-
-       @media screen and (max-width: 1105px) and (min-width: 1005px) {
-        margin: 0 0 28px 80px;
-    }
-    
-}
-
-.step-caption {
-    @media screen and (max-width: 1004px) {
-        padding-bottom: 0;
-    }
-}
-
-.step-caption:after {
-    content: none;
-}
-}
-}
-
-a {
-    font-family: Calibri-Light !important;
-    font-size: 1.32rem;
-    
-    &:hover {
-        color: rgba(193, 84, 59, 255);
-    }
-}
-
-ul {
-    margin-bottom: 64px;
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 34px;
-    }
-}
-
-li {
-    color: #4c4c4c;
-    font-family: Calibri-Light !important;
-    margin-bottom: 22px;
-    font-size: 1.35rem;
-    line-height: 1.7rem;
-    margin-bottom: 4px;
-
-    @media screen and (min-width: 768px) {
-        font-size: 1.91rem;
-        line-height: 3.7rem;
+                content: '';
+                position: absolute;
+                background: url('../img/step-1.png');
+                width: 152px;
+                height: 109px;
+                bottom: 20px;
+                right: 276px;
+            }
+        }
     }
 
-    span {
-        background-color: #c1543b;
-        padding: 5px 13px;
-        color: #fff;
-        border-radius: 50%;
-        margin-right: 10px;
-        font-size: 1.8rem;
-        font-family: Calibri-Light !important;
+    .row .col-12:nth-of-type(3) .step-caption {
+        position: relative;
+
+        &:before {
+            @media screen and (min-width: 1005px) {
+                content: '';
+                position: absolute;
+                background: url('../img/step-2.png');
+                width: 95px;
+                height: 109px;
+                right: 315px;
+                top: 7px;
+            }
+        }
+
+        &:after {
+            @media screen and (min-width: 1005px) {
+                content: '';
+                position: absolute;
+                background: url('../img/step-3.png');
+                width: 95px;
+                height: 109px;
+                right: -96px;
+                top: 7px;
+            }
+        }
+    }
+
+    .display-4 {    
+        @extend .uppercase;
+        color: rgba(105, 106, 123, 255);
+        font-family: $font-light !important;
+        font-size: 3.75rem;
+        margin-bottom: 49px;
 
         @media screen and (max-width: 767px) {
-            display: block;
-            width: 27px;
-            height: 27px;
-            margin: 0 auto 9px;
-            padding: 2px;
-            text-align: center;
-            font-size: 1.2rem;
+            font-size: 2.62rem;
+            margin-bottom: 38px;
+        }
+
+        @media screen and (max-width: 390px) {
+            font-size: 2.3rem;
         }
     }
-}
 
-.title-red {
-    font-size: 2.65rem;
-    color: #c1543b;
-    margin: 65px 0 20px;
+    .col-12 img {
+        @media screen and (min-width: 1005px) {
+            margin: 0 0 28px 100px; 
+        }
 
-    @media screen and (min-width: 768px) {
-        font-size: 3rem;
-        margin: 100px 0 50px 0;
-        padding-right: 40px;
+        @media screen and (max-width: 1004px) {
+            margin-bottom: 33px !important;
+        }
+
+        @media screen and (max-width: 1105px) and (min-width: 1005px) {
+            margin: 0 0 28px 118px;
+        }
     }
-}
 
-.col-auto {
-    @media screen and (max-width: 767px) {
-        max-width: 100% !important;
+    .row {
+
+        .col-12:nth-of-type(3) {
+
+            img {
+                @media screen and (min-width: 1005px) {
+                margin: 0 0 28px 79px;  
+                }
+            }
+        }
+
+        .col-12:nth-of-type(4) {      
+
+            img {
+        
+                @media screen and (min-width: 1005px) {
+                    margin: 0 0 28px 35px; 
+                }
+
+                @media screen and (max-width: 1105px) and (min-width: 1005px) {
+                    margin: 0 0 28px 80px;
+                }
+            }
+
+            .step-caption {
+                @media screen and (max-width: 1004px) {
+                    padding-bottom: 0;
+                }
+            }
+
+            .step-caption:after {
+                content: none;
+            }
+        }
+    }
+
+    a {
+        font-family: $font-light !important;
+        font-size: 1.32rem;
+    
+        &:hover {
+            color: rgba(193, 84, 59, 255);
+        }
     }
 
     ul {
+        margin-bottom: 64px;
+
         @media screen and (max-width: 767px) {
-            text-align: center;
-            padding: 0 10px;
-        }  
+            margin-bottom: 34px;
+        }
     }
-}
+
+    li {
+        color: #4c4c4c;
+        font-family: $font-light !important;
+        margin-bottom: 22px;
+        font-size: 1.35rem;
+        line-height: 1.7rem;
+        margin-bottom: 4px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.91rem;
+            line-height: 3.7rem;
+        }
+
+        span {
+            background-color: #c1543b;
+            padding: 5px 13px;
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 1.8rem;
+            font-family: $font-light !important;
+
+            @media screen and (max-width: 767px) {
+                display: block;
+                width: 27px;
+                height: 27px;
+                margin: 0 auto 9px;
+                padding: 2px;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .title-red {
+        font-size: 2.65rem;
+        color: #c1543b;
+        margin: 65px 0 20px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 3rem;
+            margin: 100px 0 50px 0;
+            padding-right: 40px;
+        }
+    }
+
+    .col-auto {
+        @media screen and (max-width: 767px) {
+            max-width: 100% !important;
+        }
+
+        ul {
+            @media screen and (max-width: 767px) {
+                text-align: center;
+                padding: 0 10px;
+            }  
+        }
+    }   
 }
 
 .step-caption p {
     color: rgba(12, 12, 12, 255);
     font-size: 1.35rem;
     line-height: 1.6rem;
-    font-family: Calibri-Light !important;
+    font-family: $font-light !important;
 
     @media screen and (max-width: 1044px) {
         font-size: 1.2rem;

@@ -12,9 +12,9 @@
     .display-4 {
         color: rgba(105, 106, 123, 255);
         text-align: center;
-        font-family: Calibri-Light !important;
+        font-family: $font-light !important;
         font-size: 3.75rem;
-        text-transform: uppercase;
+        @extend .uppercase;
         margin-bottom: 47px;
 
         @media screen and (max-width: 767px) {

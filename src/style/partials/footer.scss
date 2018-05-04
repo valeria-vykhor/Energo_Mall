@@ -7,12 +7,12 @@ footer {
     }
     
     p {
-        font-family: Calibri-Light;
+        @extend .font-light;
     }
 
     a {
         color: #fff;
-        font-family: Calibri-Light !important;
+        font-family: $font-light !important;
         font-size: 1.12rem;
         &:hover {
             color: #fff;
@@ -20,7 +20,7 @@ footer {
     }
 
     .display-4 {
-        text-transform: uppercase;
+        @extend .uppercase;
         font-size: 3rem;
         margin-bottom: 11px;
 
@@ -37,7 +37,7 @@ footer {
 
     .tel {
         p:nth-of-type(2) {
-            font-family: Calibri;
+            @extend .font-family;
             font-size: 1.45rem;
         }
 
@@ -88,5 +88,5 @@ footer {
             padding: 0 10px;
         }
     }
-}
+    }
 }
